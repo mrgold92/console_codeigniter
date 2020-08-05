@@ -18,7 +18,7 @@ Pequeño script en bash para poder crear la base básica de un controlador o un 
   - [Arguments:](#arguments)
     - [Create a new controller:](#create-a-new-controller)
     - [Create a new model:](#create-a-new-model)
-  - [It helps:](#it-helps)
+  - [Help:](#help)
 
 
 
@@ -94,6 +94,7 @@ We will have to put the console file inside the **root** directory of our projec
 
 ```
 📦project
+ ┣ 📂app
  ┣ 📂public
  ┣ 📂tests
  ┣ 📂vendor
@@ -106,7 +107,10 @@ We will have to put the console file inside the **root** directory of our projec
 
 ## To use it:
 
-From the command console and being positioned at the root of the project, we will put
+From the command console and being positioned at the root of the project, we will put:
+
+
+**bash**
 
 ```bash
 usuario@NOMBRE MINGW64 /ruta/raiz 
@@ -140,7 +144,7 @@ $ . console -m controller Users
 $ . console -m model Posts
 ```
 
-### It helps:
+### Help:
 
 make | -m controller|model < name >  Create a controller or a model.
 

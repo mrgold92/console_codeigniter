@@ -28,6 +28,7 @@ Deberemos poner el archivo `console` dentro del directorio **raíz** de nuestro 
 
 ```
 📦project
+ ┣ 📂app
  ┣ 📂public
  ┣ 📂tests
  ┣ 📂vendor

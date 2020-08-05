@@ -1,0 +1,107 @@
+#!/bin/bash
+
+
+param1=$1
+param2=$2
+param3=$3
+
+
+
+Help()
+{
+     # Display Help
+   echo "Ayuda."
+   echo
+   echo "Syntax: [-m|-h|make|help]"
+   echo "options:"
+   echo " make | -m  controller|model <name>     Create a controller or a model."
+   echo " help | -h     Print this Help."
+   echo
+}
+
+CrearControlador()
+{
+    ruta="./app/Controllers/"$param3".php"
+    
+  
+   if [ -f $ruta ]; then
+     echo "The controller already exists."
+   else
+        touch $ruta
+        echo -e "<?php \n" >> $ruta
+        echo -e "namespace App\Controllers; \n" >> $ruta
+        echo -e "use CodeIgniter\Controller; \n" >> $ruta
+        echo -e "class" $param3 "extends Controller{\n" >> $ruta
+        echo "}">> $ruta
+        echo "Controller" $param3".php created correctly"
+                    
+   fi
+   
+}
+
+
+
+CrearModelo()
+{
+    ruta="./app/Models/"$param3".php"
+   
+
+    if [ -f $ruta ]; then
+        echo "The model already exists."
+    else
+        touch $ruta
+        echo -e "<?php \n" >> $ruta
+        echo -e "namespace App\Models; \n" >> $ruta
+        echo -e "use CodeIgniter\Model; \n" >> $ruta
+        echo -e "class" $param3 "extends Model{\n" >> $ruta
+        echo "}">> $ruta 
+        echo "Model" $param3".php created correctly."
+    fi
+  
+   
+}
+
+Make()
+{
+
+    if [[ ! $param2 ]]; then
+        Help
+    else
+        if [[ ! $param3 ]]; then
+            Help
+        else
+
+            case $param2 in
+
+                "controller")
+                    CrearControlador
+                    ;;
+                   
+                "model")
+                    CrearModelo
+                    
+                    ;;
+                esac
+            
+        fi
+    fi
+
+}
+
+
+if [[ $param1 ]]; then
+    case $param1 in
+    "make" | "-m")
+            Make
+            ;;
+    "-h" | "help")
+
+            Help
+            ;;
+    esac
+else
+    Help
+fi
+
+
+

@@ -1,10 +1,26 @@
-# CONSOLE CODEIGNITER
-
-
-
-[TOC]
+**CONSOLE CODEIGNITER**
 
 Pequeño script en bash para poder crear la base básica de un controlador o un modelo en codeigniter.
+
+
+**Table of contents**
+
+
+- [USO](#uso)
+- [Para usarlo:](#para-usarlo)
+  - [Argumentos:](#argumentos)
+    - [Crear un nuevo controlador:](#crear-un-nuevo-controlador)
+    - [Crear un nuevo modelo:](#crear-un-nuevo-modelo)
+  - [Ayuda:](#ayuda)
+- [ENGLISH VERSION](#english-version)
+- [USE](#use)
+- [To use it:](#to-use-it)
+  - [Arguments:](#arguments)
+    - [Create a new controller:](#create-a-new-controller)
+    - [Create a new model:](#create-a-new-model)
+  - [It helps:](#it-helps)
+
+
 
 ## USO
 

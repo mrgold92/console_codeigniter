@@ -50,7 +50,7 @@ $ . console <args>
 
 ```
 
-**Powershell | Command prompt **
+**Powershell | Command prompt**
 
 ```powershell
 PS /ruta/raiz> sh console <args> 
@@ -114,7 +114,7 @@ $ . console <args>
 
 ```
 
-**Powershell | Command prompt **
+**Powershell | Command prompt**
 
 ```powershell
 PS /ruta/raiz> sh console <args> 

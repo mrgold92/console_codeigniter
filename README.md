@@ -42,11 +42,25 @@ Deberemos poner el archivo `console` dentro del directorio **raíz** de nuestro 
 
 Desde la consola de comando y estando posicionados en la raíz del proyecto, pondremos:
 
+**bash**
+
 ```bash
 usuario@NOMBRE MINGW64 /ruta/raiz 
 $ . console <args> 
 
 ```
+
+**Powershell | Command prompt **
+
+```powershell
+PS /ruta/raiz> sh console <args> 
+```
+
+```cmd
+ruta/raiz> sh console <args>
+```
+
+
 
 ### Argumentos:
 
@@ -99,6 +113,18 @@ usuario@NOMBRE MINGW64 /ruta/raiz
 $ . console <args> 
 
 ```
+
+**Powershell | Command prompt **
+
+```powershell
+PS /ruta/raiz> sh console <args> 
+```
+
+```cmd
+ruta/raiz> sh console <args>
+```
+
+
 
 ### Arguments:
 
